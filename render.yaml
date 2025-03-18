@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: capar-law-office
+    env: docker
+    region: frankfurt
+    plan: free
+    branch: main
+    healthCheckPath: /
+    numInstances: 1
+    dockerfilePath: ./Dockerfile 

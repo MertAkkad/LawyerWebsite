@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container my-5">
+    <!-- Hero Section -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h1 class="display-4 fw-bold mb-4">Hüseyin Çağatay Çapar</h1>
+            <h2 class="h3 text-secondary mb-4">Expert Legal Services</h2>
+            <p class="lead mb-4">Providing professional legal representation with integrity and dedication. We help our clients navigate complex legal challenges with personalized solutions.</p>
+            <a asp-controller="Home" asp-action="Contact" class="btn btn-dark btn-lg">Schedule Consultation</a>
+        </div>
+        <div class="col-md-6">
+            <img src="https://placehold.co/600x400/343a40/e9ecef?text=Legal+Expertise" class="img-fluid rounded shadow" alt="Legal Services">
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="row mb-5">
+        <div class="col-12 text-center mb-4">
+            <h2 class="fw-bold">Our Practice Areas</h2>
+            <p class="lead">Professional legal services tailored to your needs</p>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <i class="fas fa-balance-scale fa-3x text-dark mb-3"></i>
+                    <h3 class="h4 card-title">Corporate Law</h3>
+                    <p class="card-text">Expert guidance for businesses on legal compliance, contracts, and corporate governance.</p>
+                    <a asp-controller="Home" asp-action="PracticeAreas" class="btn btn-outline-dark mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <i class="fas fa-gavel fa-3x text-dark mb-3"></i>
+                    <h3 class="h4 card-title">Litigation</h3>
+                    <p class="card-text">Strategic representation in court proceedings with a focus on favorable outcomes.</p>
+                    <a asp-controller="Home" asp-action="PracticeAreas" class="btn btn-outline-dark mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center p-4">
+                    <i class="fas fa-home fa-3x text-dark mb-3"></i>
+                    <h3 class="h4 card-title">Real Estate Law</h3>
+                    <p class="card-text">Comprehensive legal services for property transactions, disputes, and regulations.</p>
+                    <a asp-controller="Home" asp-action="PracticeAreas" class="btn btn-outline-dark mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="row mb-5 bg-light rounded p-5">
+        <div class="col-12 text-center mb-4">
+            <h2 class="fw-bold">What Our Clients Say</h2>
+        </div>
+        <div class="col-md-8 mx-auto">
+            <blockquote class="blockquote text-center">
+                <p class="mb-4">"Hüseyin Çağatay Çapar provided exceptional legal counsel during our company's restructuring. His expertise and commitment to our case resulted in a favorable outcome beyond our expectations."</p>
+                <footer class="blockquote-footer">Mehmet Yılmaz, <cite title="Source Title">CEO of ABC Corporation</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row rounded bg-dark text-light p-5 text-center">
+        <div class="col-12">
+            <h2 class="fw-bold mb-3">Need Legal Advice?</h2>
+            <p class="lead mb-4">Contact us today for a consultation to discuss your legal matters.</p>
+            <a asp-controller="Home" asp-action="Contact" class="btn btn-light btn-lg">Get in Touch</a>
+        </div>
+    </div>
+</div>

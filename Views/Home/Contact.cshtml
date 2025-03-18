@@ -1,0 +1,130 @@
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="container my-5">
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <h1 class="display-4 fw-bold mb-4">Contact Us</h1>
+            <p class="lead">Get in touch with Hüseyin Çağatay Çapar Law Office</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Contact Information -->
+        <div class="col-lg-5 mb-5 mb-lg-0">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-4">
+                    <h2 class="h3 mb-4">Office Information</h2>
+                    
+                    <div class="mb-4">
+                        <h3 class="h5"><i class="fas fa-map-marker-alt me-2 text-dark"></i>Address</h3>
+                        <p class="ms-4 mb-0">Mecidiyeköy Mah., Büyükdere Cad.</p>
+                        <p class="ms-4 mb-0">Şişli, Istanbul 34394</p>
+                        <p class="ms-4">Turkey (Near Cevahir Shopping Mall)</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="h5"><i class="fas fa-phone me-2 text-dark"></i>Phone</h3>
+                        <p class="ms-4 mb-0">+90 555 123 4567</p>
+                        <p class="ms-4">+90 312 123 4567 (Office)</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="h5"><i class="fas fa-envelope me-2 text-dark"></i>Email</h3>
+                        <p class="ms-4">info@capar-law.com</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="h5"><i class="fas fa-clock me-2 text-dark"></i>Business Hours</h3>
+                        <p class="ms-4 mb-0">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p class="ms-4">Weekends: By appointment only</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="h5"><i class="fas fa-share-alt me-2 text-dark"></i>Follow Us</h3>
+                        <div class="ms-4">
+                            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="h3 mb-4">Send Us a Message</h2>
+                    
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="practiceArea" class="form-label">Practice Area</label>
+                            <select class="form-select" id="practiceArea">
+                                <option selected>Select a practice area</option>
+                                <option value="Corporate Law">Corporate Law</option>
+                                <option value="Litigation">Litigation</option>
+                                <option value="Real Estate Law">Real Estate Law</option>
+                                <option value="Employment Law">Employment Law</option>
+                                <option value="Intellectual Property">Intellectual Property</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Please provide details about your legal matter" required></textarea>
+                        </div>
+                        
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
+                            <label class="form-check-label" for="privacyPolicy">
+                                I agree to the <a asp-controller="Home" asp-action="Privacy">privacy policy</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-dark">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Map Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-0">
+                    <h2 class="h3 p-4 mb-0">Our Location</h2>
+                    <div class="ratio ratio-21x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.1808757323187!2d28.9921343!3d41.0666857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7027e9f8c17%3A0x19423c7295efe05c!2sMecidiyek%C3%B6y%2C%20B%C3%BCy%C3%BCkdere%20Cd.%2C%20%C5%9Ei%C5%9Fli%2F%C4%B0stanbul%2C%20Turkey!5e0!3m2!1sen!2sus!4v1705673782052!5m2!1sen!2sus" 
+                                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
